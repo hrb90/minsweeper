@@ -1,0 +1,12 @@
+#board {
+  width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tile {
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+  font-size: 14px;
+}
