@@ -1,12 +1,60 @@
 #board {
-  width: 320px;
+  width: 256px;
   display: flex;
   flex-wrap: wrap;
+  border-left: 1px solid #404040;
+  border-top: 1px solid #404040;
 }
 
 .tile {
   width: 16px;
   height: 16px;
-  padding: 2px;
-  font-size: 14px;
+}
+
+.tile.blank {
+  background-image: url("assets/blank.ico");
+}
+
+.tile.bomb {
+  background-image: url("assets/bomb.ico");
+}
+
+.tile.eight {
+  background-image: url("assets/eight.ico");
+}
+
+.tile.five {
+  background-image: url("assets/five.ico");
+}
+
+.tile.flagged {
+  background-image: url("assets/flagged.ico");
+}
+
+.tile.four {
+  background-image: url("assets/four.ico");
+}
+
+.tile.one {
+  background-image: url("assets/one.ico");
+}
+
+.tile.seven {
+  background-image: url("assets/seven.ico");
+}
+
+.tile.six {
+  background-image: url("assets/six.ico");
+}
+
+.tile.three {
+  background-image: url("assets/three.ico");
+}
+
+.tile.two {
+  background-image: url("assets/two.ico");
+}
+
+.tile.zero {
+  background-image: url("assets/zero.ico");
 }

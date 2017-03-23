@@ -546,11 +546,25 @@ const virtualBoard = boardEl => {
   return vBoard;
 };
 
+const CLASS_NAMES = {
+  "o": "blank",
+  "f": "flagged",
+  "b": "bomb",
+  0: "zero",
+  1: "one",
+  2: "two",
+  3: "three",
+  4: "four",
+  5: "five",
+  6: "six",
+  7: "seven",
+  8: "eight",
+};
+
 const render = (vBoard, board) => {
   board.publicGrid().forEach((row, rowIdx) => {
     row.forEach((tile, colIdx) => {
-      vBoard[rowIdx][colIdx].className = `tile ${tile}`;
-      vBoard[rowIdx][colIdx].innerHTML = tile;
+      vBoard[rowIdx][colIdx].className = `tile ${CLASS_NAMES[tile]}`;
     });
   });
 };
