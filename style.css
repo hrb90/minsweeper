@@ -1,9 +1,22 @@
+html, body {
+  margin: 0;
+}
+
+#board-container {
+  margin: 0 auto;
+}
+
+#board-container .resetter {
+  margin: 0 auto;
+}
+
 #board {
   width: 256px;
   display: flex;
   flex-wrap: wrap;
   border-left: 1px solid #404040;
   border-top: 1px solid #404040;
+  margin: 0 auto;
 }
 
 .tile, .resetter {
