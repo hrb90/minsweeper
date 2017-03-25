@@ -6,7 +6,7 @@
   border-top: 1px solid #404040;
 }
 
-.tile {
+.tile, .resetter {
   width: 16px;
   height: 16px;
 }
@@ -57,4 +57,12 @@
 
 .tile.zero {
   background-image: url("assets/zero.ico");
+}
+
+.resetter.smile {
+  background-image: url("assets/smile.ico");
+}
+
+.resetter.dead {
+  background-image: url("assets/dead.ico");
 }
